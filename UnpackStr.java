@@ -40,7 +40,7 @@ public class UnpackStr {
                 letter = new StringBuilder();
 
                 if (!brackets.empty()) {
-                    if (brackets.size() == 1) {
+                    if (brackets.size() != 1) {
                         // используем временный стек для реверса временной строки
                         StringBuilder tmp = new StringBuilder();
                         Stack<String> lettersTemp = new Stack<>();
